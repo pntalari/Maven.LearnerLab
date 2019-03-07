@@ -2,7 +2,7 @@ package io.zipcoder.interfaces;
 
 import java.util.ArrayList;
 
-public class People {
+public class People<E extends Person> {
     ArrayList<Person> peopleList = new ArrayList<Person>();
 
     public void add(Person person) {
@@ -40,6 +40,7 @@ public class People {
 
     public void removeAll(){
         peopleList.removeAll(peopleList);
+
     }
 
 

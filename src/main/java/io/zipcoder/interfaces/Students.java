@@ -2,7 +2,9 @@ package io.zipcoder.interfaces;
 
 import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 
-public final class Students extends People {
+import java.util.ArrayList;
+
+public final class Students extends People<Student> {
 
     private Students() {
     }
@@ -13,6 +15,10 @@ public final class Students extends People {
 
     public static Students getInstance() {
         return INSTANCE;
+    }
+
+    public ArrayList<Person> getList(){
+        return peopleList;
     }
 
 }
