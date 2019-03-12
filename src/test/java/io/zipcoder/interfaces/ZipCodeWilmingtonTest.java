@@ -15,7 +15,7 @@ public class ZipCodeWilmingtonTest {
         ZipCodeWilmington singleton = ZipCodeWilmington.getInstance();
 
         Student stud1 = new Student(50L);
-        Person stud2 = new Student(51L);
+        Student stud2 = new Student(51L);
         Student stud3 = new Student(52L);
         Student stud4 = new Student(53L);
         studSingleton.add(stud1);
@@ -42,7 +42,7 @@ public class ZipCodeWilmingtonTest {
         //Given
         double noOfHrs = 100;
         Student stud1 = new Student(50L);
-        Person stud2 = new Student(51L);
+        Student stud2 = new Student(51L);
         Student stud3 = new Student(52L);
         Student stud4 = new Student(53L);
         Instructor instructor1 = new Instructor(1L);

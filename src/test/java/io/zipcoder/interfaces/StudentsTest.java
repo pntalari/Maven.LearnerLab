@@ -21,7 +21,7 @@ public class StudentsTest {
         Long expectedId2 = 2L;
         Long expectedId3 = 3L;
         Student stud1 = new Student(expectedId1);
-        Person stud2 = new Student(expectedId2);
+        Student stud2 = new Student(expectedId2);
         Student stud3 = new Student(expectedId3);
         studSingleton.add(stud1);
         studSingleton.add(stud2);

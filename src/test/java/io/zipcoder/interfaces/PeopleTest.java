@@ -16,7 +16,7 @@ public class PeopleTest {
         Instructor instruct = new Instructor(1L);
         Student stud = new Student(2L);
         Integer beforeListSize = list.size();
-        People list = new People();
+        People list = Instructors.getInstance();
         list.add(stud);
         list.add(instruct);
         Integer afterListSize = list.getCount();
@@ -31,7 +31,7 @@ public class PeopleTest {
         String expectedName = "Nirmala";
         Person person = new Person(expectedId);
         person.setName(expectedName);
-        People list = new People();
+        People list = Students.getInstance();
         list.add(person);
         Person actualPerson = list.findById(expectedId);
         String actualName = actualPerson.getName();
@@ -44,7 +44,7 @@ public class PeopleTest {
         Instructor instruct = new Instructor(1L);
         Student stud = new Student(2L);
         Integer beforeListSize = list.size();
-        People list = new People();
+        People list = Instructors.getInstance();
         list.add(instruct);
         list.add(stud);
         Integer afterListSize = list.getCount();

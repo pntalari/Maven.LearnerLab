@@ -21,7 +21,7 @@ public class InstructorsTest {
         Long expectedId2 = 5L;
         Long expectedId3 = 6L;
         Instructor inst1 = new Instructor(expectedId1);
-        Person inst2 = new Instructor(expectedId2);
+        Instructor inst2 = new Instructor(expectedId2);
         Instructor inst3 = new Instructor(expectedId3);
         InstructorSingleton.add(inst1);
         InstructorSingleton.add(inst2);

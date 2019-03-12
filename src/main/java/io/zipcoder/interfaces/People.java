@@ -2,16 +2,16 @@ package io.zipcoder.interfaces;
 
 import java.util.ArrayList;
 
-public class People<E extends Person> {
-    ArrayList<Person> peopleList = new ArrayList<Person>();
+public abstract class People<E extends Person> {
+    ArrayList<E> peopleList = new ArrayList<E>();
 
-    public void add(Person person) {
+    public void add(E person) {
         peopleList.add(person);
     }
 
-    public Person findById(Long id) {
-        Person person = null;
-        for (Person per : peopleList
+    public E findById(Long id) {
+        E person = null;
+        for (E per : peopleList
         ) {
             if (per.getId() == id) {
                 person = per;
@@ -33,8 +33,8 @@ public class People<E extends Person> {
         return peopleList.size();
     }
 
-    public Person[] getArray() {
-        Person[] persons = new Person[peopleList.size()];
+    public E[] getArray() {
+        E[] persons = (E[]) new Object[peopleList.size()];
         return persons = peopleList.toArray(persons);
     }
 

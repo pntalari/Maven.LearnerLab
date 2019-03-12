@@ -17,8 +17,8 @@ public final class Students extends People<Student> {
         return INSTANCE;
     }
 
-    public ArrayList<Person> getList(){
-        return peopleList;
+    public <E> ArrayList<E> getList(){
+        return (ArrayList<E>) peopleList;
     }
 
 }
